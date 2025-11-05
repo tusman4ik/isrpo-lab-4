@@ -28,6 +28,11 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(5)
         self.assertEqual(res, 20)
 
+    def test_perimeter_positive_side(self):
+            """Тест периметра квадрата с положительной стороной"""
+            res = perimeter(5)
+            self.assertEqual(res, 120)
+
     def test_perimeter_negative_side(self):
         """Тест периметра квадрата с отрицательной стороной"""
         with self.assertRaises(ValueError):
