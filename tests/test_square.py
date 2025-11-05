@@ -1,6 +1,6 @@
 import unittest
 
-from geometric_lib.square import area, perimeter
+from square import area, perimeter
 
 class SquareTestCase(unittest.TestCase):
     def test_area_zero_side(self):
@@ -32,7 +32,6 @@ class SquareTestCase(unittest.TestCase):
         """Тест периметра квадрата с отрицательной стороной"""
         with self.assertRaises(ValueError):
             perimeter(-5)
-
 
 if __name__ == '__main__':
     unittest.main()
